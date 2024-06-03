@@ -1,16 +1,18 @@
 function createPostElement(post) {
     const date = new Date(post.post_date);
+    const verifiedHtml = (post.user_verified == 1) ? '<img class="post-user-verified-badge" src="img/patch-check-fill.svg" alt="Verified Badge">' : "";
     const postHTML = `
         <div class="post-user-container">
             <img src="${post.user_pfp_directory}" alt="A user's profile picture" class="post-user-pfp">
-            <span class="post-user-username">@${post.user_display_name}</span>
-            <span class="post-user-username">@${post.user_handle}</span>
+            ${verifiedHtml}
+            <span class="post-user-display-name">${post.user_display_name}</span>
+            <span class="post-user-handle">@${post.user_handle}</span>
         </div>
         <p class="post-content">${post.post_content}</p>
         <div class="post-meta">
-            <span class="post-meta-text">${date.toLocaleTimeString()}</span>
+            <span class="post-meta-text">${date.toLocaleTimeString('en-us', {timeStyle:'short'})}</span>
             <span class="post-meta-text">${date.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}</span>
-            <span class="post-meta-text">${'tinder for ipone'}</span>
+            <span class="post-meta-text">${post.post_source}</span>
         </div>
         <div class="post-metrics">
             <span class="post-metrics-text"><i class="fa-solid fa-heart"></i> ${post.post_like_count}</span>
