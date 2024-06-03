@@ -1,0 +1,65 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --col-bg: rgb(17, 13, 31);
+    --col-bg2: rgb(25, 20, 43);
+    --col-text: white;
+    --col-text-subtle: rgb(144, 136, 168);
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: var(--col-text);
+    background-color: var(--col-bg);
+}
+
+.post {
+    background-color: var(--col-bg2);
+    margin: 3rem;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem;
+}
+
+.post-user-container {
+    cursor: pointer;
+}
+
+.post-user-pfp {
+    border-radius: 50%;
+    width: 3rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.post-user-username {
+    font-weight: bold;
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+.post-meta-text {
+    color: var(--col-text-subtle);
+    font-size: 0.8rem;
+}
+.post-meta-text::after{
+    content:'\2022';
+    padding-left: 0.45rem;
+}
+.post-meta-text:last-child::after{
+    content:'';
+}
+
+.post-metrics {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.post-metrics-text {
+    cursor: pointer;
+}
