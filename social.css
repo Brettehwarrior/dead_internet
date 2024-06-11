@@ -8,7 +8,7 @@
     --col-bg2: rgb(25, 20, 43);
     --col-text: white;
     --col-text-subtle: rgb(144, 136, 168);
-    --col-primary: rgb(56, 196, 243);
+    --col-primary: #38c4f3;
 }
 
 body {
@@ -56,6 +56,20 @@ body {
     font-size: 3rem;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
+}
+.sidebar-button-signup {
+    border: none;
+    font-size: 1.6rem;
+    color: var(--col-text);
+    background-color: var(--col-primary);
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 0.7rem 0;
+    margin-top: 0.5rem;
 }
 
 .post {
