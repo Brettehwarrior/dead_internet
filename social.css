@@ -1,5 +1,6 @@
 *, *:before, *:after {
     box-sizing: border-box;
+    transition: 200ms;
 }
 
 :root {
@@ -16,7 +17,49 @@ body {
     background-color: var(--col-bg);
 }
 
+.page {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.sidebar {
+    flex: 1;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    user-select: none;
+    margin: 0;
+}
+.sidebar-list-item {
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0.4rem;
+    border-radius: 40px;
+}
+.sidebar-list-item:hover {
+    background-color: var(--col-bg2);
+}
+.sidebar-list-item>a>i {
+    text-align: center;
+    display: inline-block;
+    width: 1.8em;
+}
+.sidebar-list-item>a, .logo {
+    text-decoration: none;
+    color: var(--col-text);
+}
+.logo {
+    display: block;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .post {
+    flex: 3;
     background-color: var(--col-bg2);
     margin: 3rem;
     padding: 2rem 2rem;
@@ -42,6 +85,18 @@ body {
 }
 .post-user-verified-badge {
     color: var(--col-primary);
+}
+
+.post-media-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.post-media-image {
+    object-fit: cover;
+    height: 20rem;
+    width: 27rem;
+
+    border-radius: 20px;
 }
 
 .post-meta {

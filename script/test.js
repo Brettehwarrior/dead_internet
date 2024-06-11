@@ -1,6 +1,15 @@
 function createPostElement(post) {
     const date = new Date(post.post_date);
-    const verifiedHtml = (post.user_verified == 1) ? '<img class="post-user-verified-badge" src="img/patch-check-fill.svg" alt="Verified Badge">' : "";
+    const verifiedHtml = (post.user_verified != 1) ? "" : '<img class="post-user-verified-badge" src="img/patch-check-fill.svg" alt="Verified Badge">';
+
+    let postEmbedContent = "";
+    if (post.post_image_url) {
+        postEmbedContent = `
+            <div class="post-media-container">
+                <img class="post-media-image" src="${post.post_image_url}" alt="Post image">
+            </div>`;
+    }
+
     const postHTML = `
         <div class="post-user-container">
             <img src="${post.user_pfp_directory}" alt="A user's profile picture" class="post-user-pfp">
@@ -9,6 +18,9 @@ function createPostElement(post) {
             <span class="post-user-handle">@${post.user_handle}</span>
         </div>
         <p class="post-content">${post.post_content}</p>
+
+        ${postEmbedContent}
+
         <div class="post-meta">
             <span class="post-meta-text">${date.toLocaleTimeString('en-us', {timeStyle:'short'})}</span>
             <span class="post-meta-text">${date.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}</span>
@@ -45,7 +57,8 @@ window.initSqlJs().then(function (SQL) {
         const post = preparedStatement.getAsObject({":post_id":1});
         console.log(post);
 
-        const postDiv = createPostElement(post);
-        document.getElementById("posts").appendChild(postDiv);
+        for (let i = 0; i < 20; i++){
+            const postDiv = createPostElement(post);
+            document.getElementById("posts").appendChild(postDiv);}
     })();
 });
