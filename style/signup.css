@@ -1,0 +1,28 @@
+.signup {
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.signup-image {
+    background-image: url("../img/y.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 50vh;
+}
+
+.signup-content {
+    flex: 1;
+}
+h1 {
+    font-size: 3rem;
+}
+.signup-text-big {
+    font-size: 1.5rem;
+}
+
+.fine-print {
+    font-size: 0.6rem;
+}
