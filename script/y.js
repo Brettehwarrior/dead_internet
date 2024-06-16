@@ -56,7 +56,7 @@ window.initSqlJs().then(function (SQL) {
     console.log(SQL);
 
     (async function(){
-        const file_data = await fetch("../test.db");
+        const file_data = await fetch("y.db");
         const buffer = await file_data.arrayBuffer();
 
         // DB Setup
