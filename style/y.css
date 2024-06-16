@@ -2,6 +2,10 @@
     box-sizing: border-box;
     transition: 200ms;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
 
 :root {
     --col-bg: rgb(17, 13, 31);
@@ -23,7 +27,11 @@ body {
     width: 80%;
 }
 .sidebar {
+    padding-top: 1rem;
     flex: 1;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 }
 
 .sidebar-list {
@@ -101,6 +109,10 @@ body {
     color: var(--col-primary);
 }
 
+.post-content {
+    padding: 1rem 0;
+}
+
 .post-media-container {
     display: flex;
     margin-bottom: 1rem;
@@ -137,5 +149,7 @@ body {
     gap: 1.5rem;
 }
 .post-metrics-text {
+    color: var(--col-text);
+    text-decoration: none;
     cursor: pointer;
 }
