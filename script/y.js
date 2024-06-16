@@ -85,9 +85,11 @@ window.initSqlJs().then(function (SQL) {
             document.getElementById("posts").appendChild(postDiv);
         }
 
+        // Populate initally
         for (let i = 0; i < 6; i++)
             appendRandomPost();
 
+        // Add new post on scroll to bottom
         window.addEventListener("scroll", ()=>{handleScroll(appendRandomPost);});
     })();
 });
