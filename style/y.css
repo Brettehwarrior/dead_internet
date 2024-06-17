@@ -10,6 +10,7 @@ body {
 :root {
     --col-bg: rgb(17, 13, 31);
     --col-bg2: rgb(25, 20, 43);
+    --col-bg3: rgb(52, 51, 72);
     --col-text: white;
     --col-text-subtle: rgb(144, 136, 168);
     --col-primary: #38c4f3;
@@ -104,12 +105,16 @@ body {
     padding-bottom: 0.5em;
 }
 
+.feed {
+    flex: 2.5;
+}
 .post {
-    flex: 3;
     background-color: var(--col-bg2);
     margin: 3rem;
     padding: 2rem 2rem;
     border-radius: 0.8rem;
+    font-size: 1.1em;
+    line-height: 1.3em;
 }
 
 .post-user-container {
@@ -117,8 +122,10 @@ body {
 }
 
 .post-user-pfp {
-    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 20rem;
     width: 3rem;
+    height: 3rem;
     vertical-align: middle;
     margin-right: 0.5rem;
 }
@@ -135,6 +142,7 @@ body {
 
 .post-content {
     padding: 1rem 0;
+    margin: 0.2em 0;
 }
 
 .post-media-container {
@@ -145,8 +153,24 @@ body {
     object-fit: cover;
     height: 20rem;
     width: 27rem;
+    image-rendering: pixelated;
 
     border-radius: 20px;
+}
+.post-embed {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--col-text);
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-color: var(--col-bg3);
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+.post-embed:hover {
+    text-decoration: underline;
 }
 
 .post-meta {

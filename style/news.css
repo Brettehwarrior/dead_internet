@@ -66,6 +66,8 @@ header {
 
 .ad {
     background-image: url("../img/backrooms.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
     width: 60%;
     height: 28rem;
     margin: auto;
