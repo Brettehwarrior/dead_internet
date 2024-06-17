@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link rel="stylesheet" href="style/news.css">
+    <link id="favicon" rel="icon" href="">
+</head>
+<body>
+    <header>
+        <div class="page">
+            <h1 id="title"></h1>
+            <p class="header-description">Bringing you News for your enjoy :)</p>
+        </div>
+    </header>
+
+    <div class="page">
+        <main>
+            <div class="video-wrapper">
+                <video id="video" controls autoplay src="video/tomscott.mp4"></video>
+            </div>
+
+            <!-- Populated via news.js -->
+            <h2 id="article-title"></h2>
+            <div id="article-content"></div>
+        </main>
+    </div>
+
+    <div class="cookie-wrapper">
+        <div class="cookie-modal">
+            <h2>This Site Uses Cookies</h2>
+            <p>By continuing to use this site, you agree to whatever happens next.</p>
+        </div>
+    </div>
+
+    <script src="script/news.js"></script>
+</body>
+</html>
