@@ -24,7 +24,7 @@ function updateFavicon(emoji) {
 
 function makeAd() {
     const html = `
-        <a href="https://google.com" target="_blank" class="ad-anchor">
+        <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=8eb2b271edd6fc02&sca_upv=1&sxsrf=ADLYWIK--K07F8PV_fk5aaCh0FEIQKIx6w:1718720786440&q=yummy+bread+mmm+yum+yum+i+want+some+bread+show+me+pictures+of+good+bread&udm=2&source=univ&fir=ErQNgfHiFNn7DM%252C2s49rWbI6BdovM%252C_%253BAZ-hJulATQ4F9M%252C7miAq_epdCTsTM%252C_%253B6eW79_P2ghYi8M%252C56G0rDHfhqfldM%252C_%253BVL9pFflUylIPrM%252CEhkZN7ugZLnVNM%252C_%253BJE7pr0JR5JxqLM%252Cfvr--XsrWjmgEM%252C_%253BErHQcC7KaE2FRM%252CEsFjkk94eIBHqM%252C_%253BmQSTTKG3oLsKRM%252C-j2zvBGZWqwDtM%252C_%253Bt1SRfcX2jC5u8M%252C-I3T8OP0hPxNdM%252C_%253BgzMJPjfPUb7tfM%252CYgXnJk5PbiykQM%252C_%253BJROhXWSzs5hSZM%252CFrmQbhQEXlvNiM%252C_&usg=AI4_-kTPSIGM6UN3T9kLbwUCX-hPERP0HA&biw=918&bih=990&dpr=1" target="_blank" class="ad-anchor">
             <span class="ad-text-corner">Ad</span>
         </a>`
     const div = document.createElement("div");

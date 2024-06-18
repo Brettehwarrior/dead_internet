@@ -65,9 +65,10 @@ header {
 }
 
 .ad {
-    background-image: url("../img/backrooms.jpg");
+    background-image: url("../img/ads/bakers.png");
     background-size: cover;
     background-repeat:no-repeat;
+    background-position: center;
     width: 60%;
     height: 28rem;
     margin: auto;
