@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(130, 130, 130);
+    color: white;
+}
+
+header {
+    background-image: url("../img/gifs/matrix.gif");
+    font-size: x-large;
+    padding: 1px;
+}
+
+.post {
+    border: 2px gray solid;
+    background-color: rgb(163, 163, 163);
+    color: black;
+    margin-bottom: 20px;
+}
+.post-date {
+    background-color: rgb(137, 164, 198);
+    margin: 0;
+    padding: 0 10px;
+}
+.post-content {
+    display: flex;
+}
+.post-pfp {
+    width: 200px;
+    height: 200px;
+}
+.post-content-username {
+    margin-left: 10px;
+}
+.post-content-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.post-content-text-text {
+    margin-left: 10px;
+}
+
+.post-content-buttons {
+    text-align: right;
+}
