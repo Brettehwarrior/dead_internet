@@ -77,9 +77,9 @@ window.initSqlJs().then(function (SQL) {
                 } else if (post.post_embed_content) {
                     postEmbedContent = `
                     <div class="post-media-container">
-                        <a class="post-embed" href="news.html" target="_blank">
+                        <a class="post-embed" href="${post.post_embed_url}" target="_blank">
                             <span><i class="fa-solid fa-up-right-from-square"></i> ${post.post_embed_content}</span>
-                            <p class="post-meta-text">trustworthynews</p>
+                            <p class="post-meta-text">${post.post_embed_smalltext}</p>
                         </a>
                     </div>`;
                 }

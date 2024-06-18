@@ -1,0 +1,7 @@
+cow: https://unsplash.com/photos/brown-cattle-near-tree-_EG_Th77EmQ
+scooter: https://unsplash.com/photos/man-riding-kick-scooter-with-fast-speed-o8koK0E-oRg
+couple : https://unsplash.com/photos/couple-walking-on-snow-near-trees-during-daytime-XuN44TajBGo
+pc: https://unsplash.com/photos/black-flat-screen-computer-monitor-turned-on-beside-black-computer-keyboard-YWY_AASpmEI
+cpu: https://unsplash.com/photos/white-and-green-hard-disk-drive-JMwCe3w7qKk
+stock: https://unsplash.com/photos/black-and-silver-laptop-computer-mcAUHlGirVs
+dungeon: https://unsplash.com/photos/sunrays-thru-window-KZh5yFuPLvY
